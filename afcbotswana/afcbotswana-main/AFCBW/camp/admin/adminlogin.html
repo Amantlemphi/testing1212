@@ -270,24 +270,27 @@ window.doLogin = async function() {
     const userEmail = cred.user.email.toLowerCase();
 
     // ── ROUTE BY EMAIL ──
-    if(userEmail === ROLE_EMAILS.manager) {
-      sessionStorage.setItem('campAdminRole', 'manager');
-      window.location.href = 'manager.html';
+    // When two roles share an email, use the selected role button to decide
+const allowedEmails = Object.values(ROLE_EMAILS);
+if(!allowedEmails.includes(userEmail)) {
+  await signOut(auth);
+  showError('Your account does not have access to this portal.');
+  return;
+}
 
-    } else if(userEmail === ROLE_EMAILS.store) {
-      sessionStorage.setItem('campAdminRole', 'store');
-      window.location.href = 'store-manager.html';
+// Route based on which role button was selected
+sessionStorage.setItem('campAdminRole', currentRole);
 
-    } else if(userEmail === ROLE_EMAILS.secretary) {
-      sessionStorage.setItem('campAdminRole', 'secretary');
-      window.location.href = 'secretary.html';
-
-    } else {
-      // Valid Firebase account but not a camp admin
-      await auth.signOut();
-      showError('Your account does not have access to this portal. Please contact the camp manager.');
-    }
-
+if(currentRole === 'manager') {
+  window.location.href = 'manager.html';
+} else if(currentRole === 'store') {
+  window.location.href = 'store-manager.html';
+} else if(currentRole === 'secretary') {
+  window.location.href = 'secretary.html';
+} else {
+  await signOut(auth);
+  showError('Unknown role selected.');
+}
   } catch(err) {
     const msgs = {
       'auth/user-not-found':        'No account found with this email address.',
