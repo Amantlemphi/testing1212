@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Branch Locations – AFC Botswana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="logo-icon logo-icon-sm">
+  <img src="css/images/logo1.png" alt="Jesus The Light of The World" />
+</div>
+      <div class="nav-brand-text">
+        <span class="brand-name">Apostolic Faith Church</span>
+        <span class="brand-sub">Portland · Botswana</span>
+      </div>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="locations.html" class="active">Locations</a>
+      <a href="index.html#events">Events</a>
+      <a href="index.html#resources">Resources</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="section-label light">Find Us</div>
+    <h1 class="page-hero-title">Our Branches<br>Across Botswana</h1>
+    <p>We have active congregations in four cities. Find the one nearest to you.</p>
+  </div>
+</div>
+
+<!-- GEOLOCATION NOTICE -->
+<div class="geo-bar" id="geoBar">
+  <div class="container" style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+    <button class="btn-gold" onclick="getUserLocation()">📍 Find Nearest Branch</button>
+    <p id="geoStatus" style="margin:0;font-size:.9rem;color:#ccc;">Click to use your location to find the closest branch.</p>
+  </div>
+</div>
+
+<!-- BRANCHES -->
+<section class="section section-light">
+  <div class="container">
+    <div class="branches-list" id="branchesList">
+
+      <!-- GABORONE -->
+      <div class="branch-block" id="branch-gaborone" data-lat="-24.6282" data-lng="25.9245">
+        <div class="branch-info">
+          <div class="branch-number">01</div>
+          <div class="branch-details">
+            <h2>Gaborone Central</h2>
+            <div class="branch-meta-grid">
+              <div class="branch-meta-item">
+                <span class="meta-label">📍 Address</span>
+                <span>Plot 54021, Phase 4, Gaborone</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">📱 Phone</span>
+                <span>+267 75222415</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">🕐 Sunday Service</span>
+                <span>09:00 AM</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">🕖 Midweek Prayer</span>
+                <span>Wednesday 18:00 PM</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">👤 PASTOR /span>
+                <span>Bro M ZULU</span>
+              </div>
+                <div class="branch-meta-item">
+                <span class="meta-label">SURROUNDING BRANCHES</span>
+                <span>Mmopane,Moshupa, Molepolole,Lobatse,Sese</span>
+              </div>
+            </div>
+            <div class="branch-actions">
+              <a href="https://maps.google.com/?q=-24.6282,25.9245" target="_blank" class="btn-primary">Open in Maps</a>
+              <a href="index.html#contact" class="btn-outline-dark">Contact Branch</a>
+            </div>
+          </div>
+        </div>
+        <div class="branch-map">
+          <iframe
+            title="Gaborone Central Branch"
+            src="https://maps.google.com/maps?q=-24.6282,25.9245&z=14&output=embed"
+            width="100%" height="300" style="border:0;border-radius:8px;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="branch-divider"></div>
+
+      <!-- FRANCISTOWN -->
+      <div class="branch-block" id="branch-francistown" data-lat="-21.1719" data-lng="27.4974">
+        <div class="branch-info">
+          <div class="branch-number">02</div>
+          <div class="branch-details">
+            <h2>Francistown</h2>
+            <div class="branch-meta-grid">
+              <div class="branch-meta-item">
+                <span class="meta-label">📍 Address</span>
+                <span>UOpposite Mokaleng PS, Block 5, Francistown</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">📱 Phone</span>
+                <span>+267 71 111 111</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">🕐 Sunday Service</span>
+                <span>9:00 AM</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">🕖 Friday Fellowship</span>
+                <span>Friday 18:00 PM</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">👤 Pastor </span>
+                <span>Bro I Mabelebele</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">SURROUNDING BRANCHES</span>
+                <span>Tsamaya, Matsitama, Nata</span>
+              </div>
+            </div>
+            <div class="branch-actions">
+              <a href="https://maps.google.com/?q=-21.1719,27.4974" target="_blank" class="btn-primary">Open in Maps</a>
+              <a href="index.html#contact" class="btn-outline-dark">Contact Branch</a>
+            </div>
+          </div>
+        </div>
+        <div class="branch-map">
+          <iframe
+            title="Francistown Branch"
+            src="https://maps.google.com/maps?q=-21.1719,27.4974&z=14&output=embed"
+            width="100%" height="300" style="border:0;border-radius:8px;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="branch-divider"></div>
+
+      <!-- MAUN -->
+      <div class="branch-block" id="branch-maun" data-lat="-19.9833" data-lng="23.4167">
+        <div class="branch-info">
+          <div class="branch-number">03</div>
+          <div class="branch-details">
+            <h2>Maun</h2>
+            <div class="branch-meta-grid">
+              <div class="branch-meta-item">
+                <span class="meta-label">📍 Address</span>
+                <span>Church Street, Maun</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">📱 Phone</span>
+                <span>+267 71 111 111</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">🕐 Sunday Service</span>
+                <span>09:00 AM</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">🕖 Wednesday Bible Study</span>
+                <span>Wednesday 18:00 PM</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">👤 Pastor </span>
+                <span>Bro Taudi </span>
+              </div>
+            </div>
+            <div class="branch-actions">
+              <a href="https://maps.google.com/?q=-19.9833,23.4167" target="_blank" class="btn-primary">Open in Maps</a>
+              <a href="index.html#contact" class="btn-outline-dark">Contact Branch</a>
+            </div>
+          </div>
+        </div>
+        <div class="branch-map">
+          <iframe
+            title="Maun Branch"
+            src="https://maps.google.com/maps?q=-19.9833,23.4167&z=14&output=embed"
+            width="100%" height="300" style="border:0;border-radius:8px;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="branch-divider"></div>
+
+      <!-- LETLHAKANE -->
+      <div class="branch-block" id="branch-letlhakane" data-lat="-21.4167" data-lng="25.5833">
+        <div class="branch-info">
+          <div class="branch-number">04</div>
+          <div class="branch-details">
+            <h2>Letlhakane</h2>
+            <div class="branch-meta-grid">
+              <div class="branch-meta-item">
+                <span class="meta-label">📍 Address</span>
+                <span>Behind Letlhakane PS, Letlhakane</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">📱 Phone</span>
+                <span>+267 71 111 111</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">🕐 Sunday Service</span>
+                <span>09:00 AM</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">🕖 Midweek Meeting</span>
+                <span>Wednesday 18:00 PM</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">👤 Pastor </span>
+                <span>Bro C Motshidisi</span>
+              </div>
+              <div class="branch-meta-item">
+                <span class="meta-label">SURROUNDING BRANCHES</span>
+                <span>Mopipi, Rakops, </span>
+              </div>
+            </div>
+            <div class="branch-actions">
+              <a href="https://maps.google.com/?q=-21.4167,25.5833" target="_blank" class="btn-primary">Open in Maps</a>
+              <a href="index.html#contact" class="btn-outline-dark">Contact Branch</a>
+            </div>
+          </div>
+        </div>
+        <div class="branch-map">
+          <iframe
+            title="Letlhakane Branch"
+            src="https://maps.google.com/maps?q=-17.8252,25.1656&z=14&output=embed"
+            width="100%" height="300" style="border:0;border-radius:8px;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </div><!-- /branchesList -->
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+    <div class="logo-icon logo-icon-sm">
+  <img src="css/images/logo1.png" alt="Jesus The Light of The World" />
+</div>
+      <div>
+        <p class="footer-church-name">Apostolic Faith Church</p>
+        <p class="footer-sub">Portland, Oregon · Botswana Branch</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="locations.html">Locations</a>
+      <a href="index.html#events">Events</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <p class="footer-copy">© 2024 Apostolic Faith Church – Botswana. All rights reserved.</p>
+    <p class="footer-motto">✦ "Faith, Fellowship, Service" ✦</p>
+  </div>
+</footer>
+
+<div id="toast" class="toast"></div>
+<script src="js/data.js"></script>
+<script src="js/locations.js"></script>
+</body>
+</html>
