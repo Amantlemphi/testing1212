@@ -38,7 +38,7 @@ const CAMP_SCHEDULE = "camp_schedule";
 const ROLE_EMAILS = {
   manager:   "bw.ycm.2024@gmail.com",    // Camp Manager  — full access
   store:     "bwstore2026@gmail.com",      // Store Manager — products & orders
-  secretary: "bwstore20226@gmail.com",  // Secretary     — attendance (formerly usher)
+  secretary: "bwstore2026@gmail.com",  // Secretary     — attendance (formerly usher)
   mainsite:  "bw.ycm.2024@gmail.com",      // Main site admin
 };
 
