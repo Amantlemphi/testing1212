@@ -3,8 +3,8 @@
    ============================================================ */
 
 const BRANCHES = [
-  { id: 'gaborone',    name: 'Gaborone Central', lat: -24.6282, lng: 25.9245 },
-  { id: 'francistown', name: 'Francistown',       lat: -21.1719, lng: 27.4974 },
+  { id: 'gaborone',    name: 'Gaborone Central', lat: -24.683914, lng: 25.883191 },
+  { id: 'francistown', name: 'Francistown',       lat: -21.203145 lng: 27.528528 },
   { id: 'maun',        name: 'Maun',              lat: -19.9833, lng: 23.4167 },
   { id: 'letlhakane', name: 'Letlhakane', lat: -21.4167, lng: 25.5833 },
 ];
